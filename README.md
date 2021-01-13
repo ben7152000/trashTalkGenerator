@@ -2,9 +2,10 @@
 
 ## 環境建置與需求 (Prerequisites)
 1. Node.js : v14.15.4
-2. Express v4.17.1
-3. Nodemon 2.0.7
-4. Eslint 7.17.0
+2. Express : v4.17.1
+3. Nodemon : v2.0.7
+4. Eslint : v7.17.0
+5. Body-Parser : v1.19.0
 
 ## 安裝與執行步驟 (Installation and Execution)
 1. 將專案複製到本機 (兩種方法)
