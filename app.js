@@ -4,7 +4,9 @@ const app = express()
 
 const post = 3000
 
-// 取路由
+// 導入路由
+app.use(express.static('public'))
+
 app.get('/', (req, res) => {
   res.send('hello')
 })
