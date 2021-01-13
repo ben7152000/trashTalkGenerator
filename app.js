@@ -1,13 +1,19 @@
 // 取模組
 const express = require('express')
 const app = express()
+const bodyParser = require('body-parser')
 
 const post = 3000
 
-// 導入路由
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
+  console.log(res)
+})
+
+app.post('/', (req, res) => {
+  console.log(res.body)
   res.send('hello')
 })
 
