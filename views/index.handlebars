@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trash Talk Generator</title>
-  <link rel="stylesheet" href="/style/main.css">
-</head>
-
-<body>
-  <!-- header -->
-  <div class="header">幹話產生器 (Trash Talk Generator)</div>
-  <!-- header end -->
-
-  <!-- content -->
+<!-- content -->
   <div class="content">
     <div class="title">你想對誰說幹話?</div>
     <form action="/" method="post">
@@ -50,18 +35,10 @@
 
         <div class="generator">
           <button type="submit">產生幹話</button>
-          <textarea id="" cols="30" rows="10"></textarea>
+          <textarea id="" cols="1" rows="1" id="trash-talk">{{ trashTalk }}</textarea>
         </div>
 
       </div>
     </form>
   </div>
   <!-- content end -->
-
-  <!-- footer -->
-  <div class="cpoyright">Copyright © 2021 Yu Cheng</div>
-  <!-- footer end -->
-
-</body>
-
-</html>

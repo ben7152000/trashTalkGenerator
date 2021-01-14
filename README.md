@@ -6,6 +6,7 @@
 3. Nodemon : v2.0.7
 4. Eslint : v7.17.0
 5. Body-Parser : v1.19.0
+6. Express-Handlebars : v5.2.0
 
 ## 安裝與執行步驟 (Installation and Execution)
 1. 將專案複製到本機 (兩種方法)
@@ -25,3 +26,4 @@
 >打開瀏覽器在網址列輸入 localhost:3000 即可瀏覽
 
 ## 功能描述 (Features)
+1. 按下產生器，產生該職業幹話
