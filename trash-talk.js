@@ -1,8 +1,8 @@
 // 設定亂數 function
-function sample (array) {
-  const index = Math.floor(Math.random() * array.length)
-  return array[index]
-}
+// function sample (array) {
+//   const index = Math.floor(Math.random() * array.length)
+//   return array[index]
+// }
 
 function trashTalkGenerator () {
   // 定義變數
