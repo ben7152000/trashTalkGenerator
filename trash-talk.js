@@ -17,12 +17,14 @@ function trashTalkGenerator (options) {
     return '請選擇一個職業'
   }
 
-  // 把資料一一傳入
-  task.results.forEach(item => {
-    if (options.job === item.job) {
-      collection = `${item.name}` + sample(item.task) + sample(phrase)
-    }
+  // 比對傳進來的職業是否相同
+  const job = task.results.find(item => {
+    return options.job === item.job
   })
+
+  // 產稱幹話
+  collection = `${job.name}` + sample(job.task) + sample(phrase)
+
   // 回傳幹話
   return collection
 }
