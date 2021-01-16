@@ -1,29 +1,26 @@
 // 取模組
 const express = require('express')
 const app = express()
-const job = require('./job')
-const bodyParser = require('body-parser')
+const routes = require('./routes')
 const exphbs = require('express-handlebars')
-const trashTalkGenerator = require('./trash-talk')
+const bodyParser = require('body-parser')
 const post = 3000
+
+// 渲染引擎
+app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
+app.set('view engine', 'handlebars')
+
+// 取路由
+app.use(express.static('public'))
+app.use(routes)
 
 // 設定 body-parser
 app.use(bodyParser.urlencoded({ extended: true }))
 
-// 設定靜態網頁
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
-app.set('view engine', 'handlebars')
-app.use(express.static('public'))
-
-// 取路由
-app.get('/', (req, res) => {
-  res.render('index', { job: job.results })
-})
-
-// 設定請求
 app.post('/', (req, res) => {
-  const trashTalk = trashTalkGenerator(req.body)
-  res.render('index', { trashTalk })
+  console.log(req.body)
+  // const trashTalk = trashTalkGenerator(req.body)
+  res.render('index')
 })
 
 // 監聽伺服器

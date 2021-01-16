@@ -49,7 +49,7 @@ body {
   cursor: pointer;
 }
 
-.content .generator button {
+.content .generator input {
   width: 150px;
   height: 50px;
   text-align: center;
@@ -71,7 +71,7 @@ body {
   letter-spacing: .5px;
 }
 
-.content .generator button:hover {
+.content .generator input:hover {
   color: #fff;
   background-color: #000;
   -webkit-transform: scale(1.1);
@@ -113,7 +113,7 @@ body {
   .content .item .text {
     font-size: 1.4rem;
   }
-  .content .generator button {
+  .content .generator input {
     width: 250px;
     font-size: 1.3rem;
   }
@@ -151,7 +151,7 @@ body {
         -ms-flex-align: center !important;
             align-items: center !important;
   }
-  .content .generator button {
+  .content .generator input {
     margin-right: 20px;
   }
   .content .generator textarea {
