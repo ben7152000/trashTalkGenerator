@@ -1,6 +1,7 @@
 // 取模組
 const express = require('express')
 const app = express()
+const job = require('./job')
 const bodyParser = require('body-parser')
 const exphbs = require('express-handlebars')
 const trashTalkGenerator = require('./trash-talk')
@@ -16,7 +17,7 @@ app.use(express.static('public'))
 
 // 取路由
 app.get('/', (req, res) => {
-  res.render('index')
+  res.render('index', { job: job.results })
 })
 
 // 設定請求
