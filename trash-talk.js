@@ -4,7 +4,7 @@ function sample (array) {
   return array[index]
 }
 
-function trashTalkGenerator (options) {
+function trashTalkGenerator () {
   // 定義變數
   const task = {
     engineer: ['加個按鈕', '加新功能', '切個版', '改一點 code'],
@@ -15,6 +15,12 @@ function trashTalkGenerator (options) {
 
   // 設定空陣列
   let collection = ''
+
+  const options = {
+    engineer: 'on',
+    designer: 'on',
+    founder: 'on'
+  }
 
   // 設定勾選
   if (options.engineer === 'on') {
@@ -37,4 +43,5 @@ function trashTalkGenerator (options) {
   return collection
 }
 
-module.exports = trashTalkGenerator
+trashTalkGenerator()
+// module.exports = trashTalkGenerator
