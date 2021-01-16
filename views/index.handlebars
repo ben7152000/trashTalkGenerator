@@ -1,44 +1,40 @@
 <!-- content -->
-  <div class="content">
-    <div class="title">你想對誰說幹話?</div>
-    <form action="/" method="post">
-      <div class="container">
-        <div class="items">
-          <div class="item">
-            <div class="pic">
-              <img src="/image/engineer.jpg" alt="engineer">
-            </div>
-            <div class="btn">
-              <input type="radio" name="engineer" id="engineer">
-              <label for="engineer">工程師</label>
-            </div>
-          </div>
-          <div class="item">
-            <div class="pic">
-              <img src="/image/designer.jpg" alt="designer">
-            </div>
-            <div class="btn">
-              <input type="radio" name="designer" id="designer">
-              <label for="designer">設計師</label>
-            </div>
-          </div>
-          <div class="item">
-            <div class="pic">
-              <img src="/image/founder.jpg" alt="founder">
-            </div>
-            <div class="btn">
-              <input type="radio" name="founder" id="founder">
-              <label for="founder">企業家</label>
-            </div>
+<div class="content">
+  <div class="title text-center w-100 mt-4 mb-4">你想對誰說幹話?</div>
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-10 col-md-6 col-xl-4 mb-2">
+        <div class="item">
+          <img src="./image/engineer.jpg" alt="engineer" class="w-100">
+          <div class="text text-center mt-2 mb-2">
+            <input type="radio" name="job" value="engineer" id="engineer">
+            <label for="engineer" class="mt-2 mb-2">工程師</label>
           </div>
         </div>
-
-        <div class="generator">
-          <button type="submit">產生幹話</button>
-          <textarea id="" cols="1" rows="1" id="trash-talk">{{ trashTalk }}</textarea>
-        </div>
-
       </div>
-    </form>
+      <div class="col-10 col-md-6 col-xl-4 mb-2">
+        <div class="item">
+          <img src="./image/designer.jpg" alt="designer" class="w-100">
+          <div class="text text-center mt-2 mb-2">
+            <input type="radio" name="job" value="designer" id="designer">
+            <label for="designer" class="mt-2 mb-2">設計師</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-md-6 col-xl-4 mb-2">
+        <div class="item">
+          <img src="./image/founder.jpg" alt="founder" class="w-100">
+          <div class="text text-center mt-2 mb-2">
+            <input type="radio" name="job" value="founder" id="founder">
+            <label for="founder" class="mt-2 mb-2">企業家</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="generator w-100 d-flex flex-column align-items-center mt-3 mb-3">
+      <button type="submit" class="d-flex justify-content-center mt-2 mb-2">產生幹話</button>
+      <textarea cols="10" rows="10" class="w-100 mt-2 mb-2 pt-2 ps-2">{{ trashTalk }}</textarea>
+    </div>
   </div>
-  <!-- content end -->
+</div>
+<!-- content end -->
